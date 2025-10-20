@@ -1,0 +1,10 @@
+# Ignoriraj sistemske datoteke
+.DS_Store
+Thumbs.db
+
+# Ignoriraj mape
+node_modules/
+temp/
+
+# Ignoriraj log datoteke
+*.log
