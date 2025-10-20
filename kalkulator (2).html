@@ -1,0 +1,104 @@
+<html lang="sl">
+
+<head>
+    <title>ORS: Seminarska naloga 2</title>
+    <meta charset="UTF-8">
+    <meta Last-Modified="2023-01-10">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Vključimo jQuery knjižnico iz spletnega content delivery sistema. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Vključimo datoteko z našo Javascript/jQuery kodo. -->
+    <script src="funkcije.js"></script>
+    <!-- Vključimo knjižnico math.js -->
+    <script src="math.js" type="text/javascript"></script>
+    <!-- Vključimo CSS datoteko -->
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="naslovnaVrstica">
+    </div>
+    <div>
+        <h2>Prvi del - implementacija s knjižnico</h2>
+        <h4>Uporabljena knjižnica: math.js.</h4>
+        <p>Vpiši enačbo v vnosno polje in klikni gumb "Izračunaj." Rezultat se izpiše poleg besede "Rezultat:."</p>
+        <ul>
+            <li>Seštevanje, odštevanje, množenje, deljenje
+                <ul>
+                    <li>Prednost operacij in oklepaji</li>
+                    <li>Modul (izračun ostanka), potenciranje, koren</li>
+                    <li>Vpis celotnega računa</li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Del za vnos enačbe in izpis rezultata -->
+        <div>
+            <input type="text" name="enacbaVnos" id="enacbaVnos" placeholder="Vnesite želeno enačbo...">
+            <button id="enacbaCalculate" type="button" onclick="calculateEnacba()">Izračunaj</button>
+        </div>
+        <div>
+            <p>Rezultat: <label id="calculatedValue"></label></p>
+
+        </div>
+    </div>
+
+    <div>
+        <h2>Prvi del - lastna implementacija</h2>
+        <div>
+            <h3>Seštevanje</h3>
+            <input type="text" name="sestevanjePrvoStevilo" id="sestevanjePrvoStevilo" placeholder="Vnesite prvo število...">
+            <span>&#9675</span>
+            <input type="text" name="sestevanjeDrugoStevilo" id="sestevanjeDrugoStevilo" placeholder="Vnesite drugo število...">
+            <button id="sestevanjeCalculate" type="button" onclick="calculateSestevanje()">Izračunaj</button>
+            <p>Rezultat: <label id="outputSestevanje"></label></p>
+        </div>
+        <div>
+            <h3>Odštevanje</h3>
+            <input type="text" name="odstevanjePrvoStevilo" id="odstevanjePrvoStevilo" placeholder="Vnesite prvo število...">
+            <span>&#9675</span>
+            <input type="text" name="odstevanjeDrugoStevilo" id="odstevanjeDrugoStevilo" placeholder="Vnesite drugo število...">
+            <button id="odstevanjeCalculate" type="button" onclick="calculateOdstevanje()">Izračunaj</button>
+            <p>Rezultat: <label id="outputOdstevanje"></label></p>
+        </div>
+        <div>
+            <h3>Množenje</h3>
+            <input type="text" name="mnozenjePrvoStevilo" id="mnozenjePrvoStevilo" placeholder="Vnesite prvo število...">
+            <span>&#9675</span>
+            <input type="text" name="mnozenjeDrugoStevilo" id="mnozenjeDrugoStevilo" placeholder="Vnesite drugo število...">
+            <button id="mnozenjeCalculate" type="button" onclick="calculateMnozenje()">Izračunaj</button>
+            <p>Rezultat: <label id="outputMozenje"></label></p>
+        </div>
+        <div>
+            <h3>Deljenje</h3>
+            <input type="text" name="deljenjePrvoStevilo" id="deljenjePrvoStevilo" placeholder="Vnesite prvo število...">
+            <span>&#9675</span>
+            <input type="text" name="deljenjeDrugoStevilo" id="deljenjeDrugoStevilo" placeholder="Vnesite drugo število...">
+            <button id="deljenjeCalculate" type="button" onclick="calculateDeljenje()">Izračunaj</button>
+            <p>Rezultat: <label id="outputDeljenje"></label></p>
+        </div>
+        <div>
+            <h3>Modul</h3>
+            <input type="text" name="deljenecModul" id="deljenecModul" placeholder="Vnesite deljenec...">
+            <span>&#9675</span>
+            <input type="text" name="deliteljModul" id="deliteljModul" placeholder="Vnesite delitelj...">
+            <button id="modulCalculate" type="button" onclick="calculateModul()">Izračunaj</button>
+            <p>Rezultat: <label id="outputModul"></label></p>
+        </div>
+        <div>
+            <h3>Potence</h3>
+            <input type="text" name="potencaOsnova" id="potencaOsnova" placeholder="Vnesite osnovo potence...">
+            <span>&#9675</span>
+            <input type="text" name="potencaPotenca" id="potencaPotenca" placeholder="Vnesite potenco...">
+            <button id="potencaCalculate" type="button" onclick="calculatePotenca()">Izračunaj</button>
+            <p>Rezultat: <label id="outputPotenca"></label></p>
+        </div>
+        <div>
+            <h3>Kvadratni koren</h3>
+            <input type="text" name="kkorenKorenjenec" id="kkorenKorenjenec" placeholder="Vnesite korenjenca...">
+            <button id="kkorenCalculate" type="button" onclick="calculateKoren()">Izračunaj</button>
+            <p>Rezultat: <label id="outputKkoren"></label></p>
+        </div>
+    </div>
+</body>
+
+</html>

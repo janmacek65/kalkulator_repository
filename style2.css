@@ -1,0 +1,24 @@
+/* ORS Seminarska naloga 2 */
+/* Datoteka s CSS kodo */
+/* Avtor: Marko Kurnik */
+/* Datum: 2023-01-05 */
+
+.naslovnaVrstica h1 {
+    margin-bottom: 5px;
+}
+
+.naslovnaVrstica h4 {
+    margin-top: 0px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+h4 {
+    margin-top: 0px;
+}
+
+input {
+	width: 200px;
+}
